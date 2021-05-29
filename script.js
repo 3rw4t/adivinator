@@ -189,3 +189,87 @@ function getRemainingProperties(restantes) {
 			resolved(final_array);
 	});
 };
+
+/*
+if (db.personas[0].xd == undefined) {
+	console.log(Object.getOwnPropertyNames(db.personas[2]))
+	console.log(Object.values(db.personas[2]))
+}
+for (var i = 0; i < nombre_personas.length; i++) {
+	document.write('<h2 style="text-align: center;"> {"name":"' + nombre_personas[i] +'"},</h2>');
+}
+'<img src="images/' + i + '.png" class="imagen">'+ '<h2 style="text-align: center;">'+ db.personas[i].name +' '+ i + ' es ' + genero+'</h2>'
+	document.writeln('<img src="images/' + i + '.png" class="imagen">');
+	document.writeln('<h2 style="text-align: center;">'+ db.personas[i].name +' '+ i + ' es ' + genero+'</h2>');
+for (var i = 0; i < 7; i++) {
+	document.write('<h2 style="text-align: center;">'+ laJuana.age +'</h2>');
+	document.write('<h2 style="text-align: center;">'+ laJuana.name +'</h2>');
+
+}
+for (var i = nombre_personas.length - 1; i >= 0; i--) {
+	let x = new Persona (nombre_personas[i])
+	
+}
+var myJsonString = JSON.stringify(nombre_personas);
+
+for (var i = 0; i < nombre_personas.length; i++) {
+	document.write('<h2 style="text-align: center;"> {"name":"' + nombre_personas[i] +'", "id":"' + i + '" },</h2>');
+}
+	var genero, contador;
+	contador = 0
+for (var i = 0 ; i < db.personas.length; i++) {
+
+	if (genera_personas[i]){
+		genero = "mujer";
+		contador= contador +1 ;
+	}else{
+		genero = "hombre";
+	}
+	document.write('<img src="images/' + i + '.png" class="imagen">');
+	document.write('<h2 style="text-align: center;">'+ db.personas[i].name +' '+ i + ' es ' + genero+'</h2>');
+}
+	var genero, contador;
+	contador = 0
+for (var i = 0 ; i < db.personas.length; i++) {
+
+	if (genera_personas[i]){
+		genero = "mujer";
+		contador= contador +1 ;
+	}else{
+		genero = "hombre";
+	}
+	document.write('<img src="images/' + i + '.png" class="imagen">');
+	document.write('<h2 style="text-align: center;">'+ db.personas[i].name +' '+ i + ' es ' + genero+'</h2>');}
+document.write('<h2 style="text-align: center;"> Cantidad de mujeres: '+contador+'</h2>');
+*/
+/* function getRemainingProperties() {
+	var final_array = [];
+	var current_prop;
+	var esta;
+	for (var i = 0; i < db_playing.length; i++) {
+		current_prop = Object.getOwnPropertyNames(db.personas[db_playing[i]]);
+		for (var a = 1; a<current_prop.length; a++) {
+			var esta=false;
+			for (var b=0;b<final_array.length;b++) {
+				if (current_prop[a]==final_array[b]){
+					esta=true;
+				};
+			};
+			if (!esta){
+				final_array.push(current_prop[a])
+			};
+		};
+	};
+	for (var i = final_array.length - 1; i >= 0; i--) {
+	  esta=false;
+		for (var a = 0; a <props_descarted.length; a++) {
+			if (final_array[i] == props_descarted[a]) {
+				esta = true;
+			}		
+		}
+		if (esta) {
+			final_array.splice(final_array[i], 1);
+		}
+	}
+	return final_array;
+};*/
