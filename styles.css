@@ -1,9 +1,9 @@
-#imagen {
-  width: 100%;
-  max-width: 500px; 
-  min-width: 260px; 
-  float:right; 
-  margin-right: 20px
+#imagen{
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	float: right;
+	margin-right: 10px;
 }
 #pregunta{
 	text-align: center;
@@ -21,6 +21,12 @@
 }
 #resultado{
 	width: 100%;
-  max-width: 500px; 
+  max-width: 400px; 
   min-width: 100px;
+  height: auto;
+}
+.responsive{
+	max-width: 100%;
+	height: auto;
+		margin-left: 10px;
 }
