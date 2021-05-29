@@ -4,7 +4,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
    	<link rel="stylesheet" href="styles.css">
@@ -19,12 +18,13 @@
       <div style="; margin-top: auto; margin-bottom: auto; ">
         <h2 id="pregunta" style="max-width: 500px"></h2>
         <div class="btn-group-vertical" style="width: 100%; max-width: 500px;min-width: 260px">
-          <button type="button" class="btn btn-info btn-block" onclick="si()">Si</button>
-          <button type="button" class="btn btn-info btn-block" onclick="no()">No</button>
-          <button type="button" class="btn btn-info btn-block" onclick="nose()">No sé</button>
+          <button type="button" class="btn btn-info btn-block" onclick="boton(true)">Si</button>
+          <button type="button" class="btn btn-info btn-block" onclick="boton(false)">No</button>
+          <button type="button" class="btn btn-info btn-block" onclick="boton()">No sé</button>
         </div>
       </div>
     </div>
+    <h2 id="test"></h2>
     <script type="text/javascript" src="script.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
