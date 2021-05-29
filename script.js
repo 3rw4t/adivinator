@@ -145,7 +145,7 @@ async function getPregunta() {
   	case "bibliotecaria":
   	return "¿Es bibliotecaria?"
   	break;
-  case "bibliotecaria":
+  case "administrativa":
   	return "¿Trabaja como administrativa en el nivel superior?"
   	break;
   	case "primergrado":
