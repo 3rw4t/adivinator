@@ -10,21 +10,20 @@
     <title>Adivinator</title>
   </head>
   <body>
-    <h1 style="text-align: center; margin-top: 20px; font-size: 6vw;">Bienvenido a Adivinator!</h1>
+    <h1 style="text-align: center; font-size: 6vw;">Bienvenido a Adivinator!</h1>
     <div class="grid-container"  >
       <div >
-        <img id="imagen" src="images/bienvenida.jpeg">
+        <img id="imagen" src="images/bienvenida.jpeg" >
       </div>
       <div style="; margin-top: auto; margin-bottom: auto;">
-        <h2 id="pregunta" style="max-width: 500px;font-size: 2vw;">Voy a intentar adivinar el alumno de yugets que estás pensando a través de una serie de preguntas.</h2>
-        <div  ><img id="resultado" class="imagen" ></div>
-        
-        <div class="btn-group-vertical " id="buttons" style="width: 100%; max-width: 500px;min-width: 260px">
-          <button type="button" class="btn btn-info btn-block" onclick="boton('si')">Si</button>
+        <h2 id="pregunta" style="max-width: 500px; font-size: 2vw;">Voy a intentar adivinar el alumno de yugets que estás pensando a través de una serie de preguntas.</h2>
+        <div  ><img id="resultado" class="imagen responsive"  ></div>
+        <div class="btn-group-vertical " id="buttons" style="width: 100%; max-width: 500px; ">
+          <button type="button" class="btn btn-info btn-block" onclick="boton('si')" >Si</button>
           <button type="button" class="btn btn-info btn-block" onclick="boton('no')">No</button>
           <button type="button" class="btn btn-info btn-block" onclick="boton('nose')">No sé</button>
         </div>
-         <button type="button" class="btn btn-info btn-block" onclick="empezarjuego()" id="buttonem" style="width: 100%; max-width: 500px;min-width: 260px">¡Empezar!</button>
+         <button type="button" class="btn btn-info btn-block" onclick="empezarjuego()" id="buttonem" style="width: 100%; max-width: 500px;">¡Empezar!</button>
       </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
