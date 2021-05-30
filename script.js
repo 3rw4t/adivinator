@@ -3,18 +3,29 @@ var db_playing =  [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23
 var props_descarted=[];
 document.getElementById("imagen").hidden= false;
 document.getElementById("buttons").hidden= true;
+document.getElementById("btnreinicio").hidden= true;
+document.getElementById("resultado").hidden= true;
+function reinicio() {
+	db_playing =  [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29];
+	props_descarted=[];
+	empezarjuego();
+}
 function empezarjuego() {
 	document.getElementById("imagen").src= "images/pregunta.jpg";
 	getPregunta().then(a => {document.getElementById("pregunta").innerHTML =  a;})
 	document.getElementById("buttonem").hidden= true;
 	document.getElementById("buttons").hidden= false;
+	document.getElementById("btnreinicio").hidden= true;
+	document.getElementById("resultado").hidden= true;
 }
 function checkstatus() {
 	if (db_playing.length == 1) {
 		document.getElementById("buttons").hidden= true;
 		document.getElementById("pregunta").innerHTML = "¿Estabas pensando en " + db.personas[db_playing[0]].name + "?";
 		document.getElementById("imagen").src= "images/respuesta.jpeg";
+		document.getElementById("resultado").hidden= false;
 		document.getElementById("resultado").src= "images/" + db_playing[0] +".png";
+		document.getElementById("btnreinicio").hidden= false;
 	}
 }
 async function boton(respuesta) {
