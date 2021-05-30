@@ -1,19 +1,10 @@
-#imagen{
-	width: 100%;
-	height: auto;
-	max-width: 500px;
-	float: right;
-	margin-right: 10px;
-}
-#pregunta{
-	text-align: center;
-}
 .grid-container{
 	display: grid;
 	grid-template-columns: 50% 50%;
 	width: 70%;
 	margin-left: auto;
 	margin-right: auto;
+	grid-template-rows: auto 10%;
 }
 .textoP{
 	text-align: center;
@@ -29,4 +20,17 @@
 	max-width: 100%;
 	height: auto;
 		margin-left: 10px;
+}
+#btnreinicio{
+	width: 100%;
+}
+#imagen{
+	width: 100%;
+	height: auto;
+	max-width: 500px;
+	float: right;
+	margin-right: 10px;
+}
+#pregunta{
+	text-align: center;
 }
