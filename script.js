@@ -151,7 +151,7 @@ async function getPregunta() {
   	return "¿Tiene hij@/s?"
   	break;
   	case "cemento":
-  	return "¿Es sabido que crió con el cemento?"
+  	return "¿Es sabido que se crió con el cemento?"
   	break;
   	case "bibliotecaria":
   	return "¿Es bibliotecaria?"
